@@ -1,0 +1,123 @@
+body{
+  background-color: rgb(255, 160, 176);
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.topnav {
+  background-color: rgb(255, 1, 86);
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color:rgb(207, 196, 200);
+  color: rgb(255, 1, 86);
+}
+.topnav a.active {
+  background-color: rgb(207, 196, 200);
+  color: rgb(255, 1, 86);
+}
+table{
+  width: 35%;
+}
+.b{
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  background-color: rgb(0, 119, 255);
+  border: 0;
+  border-radius: 30px;
+  line-height: 1;
+  padding: 16px 30px;
+  display: inline-block;
+  font-size: 12px;
+}
+.b:hover,
+.b:focus{
+  background: rgb(0, 0, 255);
+}
+.b:active{
+  background: rgb(3, 3, 143);
+}
+ul{
+  list-style-type: circle;
+  background: rgb(250, 53, 201);
+  padding: 20px;
+}
+ul li{
+  background: rgb(255, 21, 150);
+  margin: 5px;
+}
+.navbar {
+  background-color: rgb(255, 1, 86);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar .search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar.search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc; 

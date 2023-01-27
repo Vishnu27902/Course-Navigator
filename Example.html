@@ -1,0 +1,30 @@
+<html>    
+    <head>    
+        <title>Registration Form</title>  
+        <link rel="stylesheet" href="..\programs\hello.css"   type="text/css"/>  
+    </head>    
+    <body>       
+        <h2>Sign Up</h2>    
+        <form name = "form1" action="modified.php" method = "post" enctype = "multipart/form-data" >    
+            <div class = "container">    
+                <div class = "form_group">    
+                    <label>First Name:</label>    
+                    <input type = "text" name = "fname" value = "" required/>    
+                </div>    
+                <div class = "form_group">    
+                    <label>Middle Name:</label>    
+                    <input type = "text" name = "mname" value = "" required />    
+                </div>    
+                <div class = "form_group">    
+                    <label>Last Name:</label>    
+                    <input type = "text" name = "lname" value = "" required/>    
+                </div>    
+                <div class = "form_group">    
+                    <label>Password:</label>    
+                    <input type = "password" name = "pwd" value = "" required/>    
+                </div>    
+                <button id="b" onclick="document.getElementById('b').innerHTML='You clicked'">Sumbit</button>
+            </div>    
+        </form>    
+    </body>    
+</html>    

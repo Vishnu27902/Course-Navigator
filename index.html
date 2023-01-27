@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div id="title" title="index"></div>
+  <meta charset="utf-8">
+  <title>Course Navigator</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="database.js"></script>
+  <script type="text/javascript" src="operation.js"></script>
+  <script type="text/javascript" src="serp.js"></script>
+</head>
+<body>
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">Course Navigator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+            <li class="nav-item">
+              <form name="search-box" class="d-flex" onsubmit="getKey()" action="">
+                <input name="key" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Helps you to choose the right course.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div><br>
+        <div class="col-lg-6">
+          <div class='text-center'>
+            <main class="form-signin">
+              <form>
+                <h1>"It's What You Practice In Private That You Will Be Rewarded For In Public"</h1>
+              </form>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Learn from scratch.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Frequently updated.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title">Industry experience</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="colored-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">The way they teach is just worderfull. Thanks for bringing this up. I enjoy every single minute while learning this couse.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg">
+          <em>Peter, Mumbai</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">They update every collection of information and keep you up to date. which makes this website stand out from crowd.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg">
+          <em>Elena, Delhi</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+  <section class="colored-section" id="press">
+    <img class="press-logo" src="images/coursera-croped.jpg">
+    <img class="press-logo" src="images/nptel-croped.jpg">
+    <img class="press-logo" src="images/sololearn-croped.jpg">
+    <img class="press-logo" src="images/udemy-croped.jpg">
+    <img class="press-logo" src="images/byjus-croped.jpg">
+  </section>
+  <section class="white-section" id="pricing">
+    <h2 class="section-heading">Courses Available</h2>
+    <p>Pick one from it.</p>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>C</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 499</h2>
+            <p>From Scratch</p>
+            <p>Frequently updated</p>
+            <p>Including advanced concepts</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://www.youtube.com/watch?v=KJgsSFOSQv0';">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Java</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 499</h2>
+            <p>From Scratch</p>
+            <p>Frequently updated</p>
+            <p>Including advanced concepts</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://www.youtube.com/watch?v=CFD9EFcNZTQ';">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Python</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 499</h2>
+            <p>From Scratch</p>
+            <p>Frequently updated</p>
+            <p>Including advanced concepts</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://www.youtube.com/watch?v=woVJ4N5nl_s';">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Web Developement</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 999</h2>
+            <p>From Scratch</p>
+            <p>Frequently updated</p>
+            <p>Including advanced concepts</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://www.youtube.com/watch?v=TdqQqyc7pfU';">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Artificial Intelligence</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 999</h2>
+            <p>From Scratch</p>
+            <p>Frequently updated</p>
+            <p>Including advanced concepts</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://www.youtube.com/watch?v=lNulXGizZxo';">Buy</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Cloud Computing AWS</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">₹ 999</h2>
+            <p>From Scratch</p>
+            <p>Frequently updated</p>
+            <p>Including advanced concepts</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button" onclick="window.location.href='https://www.youtube.com/watch?v=2LaAJq1lB1Q';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Try our mobile application for easy access.</h3>
+      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg btn-outline-light" type="button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section>
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fas fa-envelope"></i>
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <p>© Copyrights preserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
